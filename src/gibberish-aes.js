@@ -996,3 +996,6 @@ var GibberishAES = (function(){
 if ( typeof define === "function" ) {
     define(function () { return GibberishAES; });
 }
+if ( typeof module !== "undefined" && module !== null ) {
+  module.exports = function() { return GibberishAES; };
+}
